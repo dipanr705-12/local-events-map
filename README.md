@@ -10,6 +10,10 @@ A modern, responsive web application for discovering and sharing local events ha
 
 ## ✨ Features
 
+- **🔱 Complete West Bengal Durga Puja Pandals Directory**:
+  - Over 42 world-famous pandals across Kolkata (North, Central, South, Salt Lake, VIP Road) and districts (Nadia Kalyani, North 24 Pgs Barasat, Hooghly Chandannagar, Howrah, Siliguri, Bardhaman).
+  - Accurate GPS coordinates, nearest metro/railway stations, optimal visiting hours, themes, and 1-click turn-by-turn navigation.
+  - Dedicated **Durga Puja Pandal** category filter and custom map pins.
 - **🗺️ Interactive Map & List Synchronization**:
   - Live map powered by Leaflet & OpenStreetMap tiles (no API keys required).
   - Color-coded pins for each category (Tech & AI, Music, Food, Arts, Sports, Community, Outdoors).

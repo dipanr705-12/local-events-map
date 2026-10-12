@@ -6,6 +6,7 @@ const ALLOWED_CATEGORIES = [
   'Sports & Fitness',
   'Community & Meetup',
   'Outdoors & Nature',
+  'Durga Puja Pandal',
 ];
 
 /**

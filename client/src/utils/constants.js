@@ -1,4 +1,5 @@
 export const CATEGORIES = [
+  { name: 'Durga Puja Pandal', color: '#e11d48', bg: 'bg-rose-50', text: 'text-rose-700', border: 'border-rose-200', icon: 'Flame' },
   { name: 'Tech & AI', color: '#6366f1', bg: 'bg-indigo-50', text: 'text-indigo-700', border: 'border-indigo-200', icon: 'Cpu' },
   { name: 'Music & Concerts', color: '#ec4899', bg: 'bg-pink-50', text: 'text-pink-700', border: 'border-pink-200', icon: 'Music' },
   { name: 'Food & Drink', color: '#f97316', bg: 'bg-orange-50', text: 'text-orange-700', border: 'border-orange-200', icon: 'Utensils' },
@@ -9,6 +10,7 @@ export const CATEGORIES = [
 ];
 
 export const CATEGORY_COLORS = {
+  'Durga Puja Pandal': '#e11d48',
   'Tech & AI': '#6366f1',
   'Music & Concerts': '#ec4899',
   'Food & Drink': '#f97316',
@@ -19,25 +21,27 @@ export const CATEGORY_COLORS = {
 };
 
 export const DEFAULT_INDIA_CENTER = {
-  lat: 20.5937,
-  lng: 78.9629,
-  zoom: 5,
+  lat: 22.5726,
+  lng: 88.3639,
+  zoom: 12,
 };
 
 export const INDIAN_CITIES = [
+  { name: 'Kolkata (West Bengal)', lat: 22.5726, lng: 88.3639, zoom: 12 },
   { name: 'All India', lat: 20.5937, lng: 78.9629, zoom: 5 },
   { name: 'Bengaluru', lat: 12.9716, lng: 77.5946, zoom: 12 },
   { name: 'Mumbai', lat: 19.0760, lng: 72.8777, zoom: 12 },
   { name: 'Delhi NCR', lat: 28.6139, lng: 77.2090, zoom: 12 },
   { name: 'Hyderabad', lat: 17.3850, lng: 78.4867, zoom: 12 },
   { name: 'Pune', lat: 18.5204, lng: 73.8567, zoom: 12 },
-  { name: 'Kolkata', lat: 22.5726, lng: 88.3639, zoom: 12 },
   { name: 'Chennai', lat: 13.0827, lng: 80.2707, zoom: 12 },
   { name: 'Goa', lat: 15.2993, lng: 74.1240, zoom: 11 },
   { name: 'Jaipur', lat: 26.9124, lng: 75.7873, zoom: 12 },
 ];
 
 export const DEFAULT_PRESET_IMAGES = [
+  { label: 'Durga Puja / Heritage Pandal', url: 'https://images.unsplash.com/photo-1601614765365-1d4a070eb374?auto=format&fit=crop&w=800&q=80' },
+  { label: 'Traditional Idol Art', url: 'https://images.unsplash.com/photo-1570784332176-fdd73da66f03?auto=format&fit=crop&w=800&q=80' },
   { label: 'Technology / Code', url: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80' },
   { label: 'Concert / Music', url: 'https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=800&q=80' },
   { label: 'Food / Culinary', url: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80' },
