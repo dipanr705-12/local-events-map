@@ -1,0 +1,17 @@
+{
+  "name": "local-events-map",
+  "version": "1.0.0",
+  "description": "Local Events Map - Discover and share events near you",
+  "scripts": {
+    "dev": "npm run start --prefix server & npm run dev --prefix client",
+    "start:server": "npm start --prefix server",
+    "start:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "seed": "npm run seed --prefix server",
+    "test": "npm test --prefix server",
+    "install:all": "npm install --prefix server && npm install --prefix client"
+  },
+  "keywords": ["events", "map", "leaflet", "react", "express", "sqlite"],
+  "author": "",
+  "license": "MIT"
+}
