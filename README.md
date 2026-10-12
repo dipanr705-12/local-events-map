@@ -1,6 +1,8 @@
-# 📍 Local Events Map
+# 📍 Local Events India - Interactive Map & Discovery
 
-A modern, responsive web application for discovering and sharing local events happening near you. Explore events on an interactive map or a searchable list, filter by category, date, and distance, save your favorite events, and publish new events with interactive pin placement.
+> 🌐 **Live Demo Website**: [https://mind-relate-charge-omaha.trycloudflare.com](https://mind-relate-charge-omaha.trycloudflare.com)
+
+A modern, responsive web application for discovering and sharing local events happening across India. Explore events on an interactive map or a searchable list, filter by top Indian cities (Bengaluru, Mumbai, Delhi NCR, Hyderabad, Pune, Kolkata, Chennai, Goa, Jaipur), categories, date, and distance, save your favorite events, and host new events.
 
 ![Local Events Map Screenshot](./docs/screenshot.jpg)
 
