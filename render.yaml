@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: local-events-map
+    env: node
+    region: singapore  # closest to India
+    plan: free
+    buildCommand: npm install --prefix server && npm install --prefix client && npm run build
+    startCommand: npm run start:server
+    envVars:
+      - key: NODE_VERSION
+        value: 22.5.0
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
+      - key: DB_PATH
+        value: /var/data/events.db
+    disk:
+      name: events-db
+      mountPath: /var/data
+      sizeGB: 1
