@@ -392,7 +392,8 @@ app.get('/api/geocode', async (req, res) => {
 });
 
 // Catch-all: serve React app for any non-API route (client-side routing)
-app.get('*', (req, res) => {
+// Express v5 uses path-to-regexp v8 which requires '/{*path}' or regex /.*/ instead of '*'
+app.get('/{*path}', (req, res) => {
   res.sendFile(path.join(__dirname, '../../client/dist/index.html'));
 });
 
