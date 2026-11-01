@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 const db = require('./db');
 const { validateEvent, ALLOWED_CATEGORIES } = require('./validation');
 const { calculateDistanceKm, getDateRange } = require('./utils');
@@ -13,6 +14,10 @@ app.use(cors({
   origin: '*', // Allow all origins for local development / testing
 }));
 app.use(express.json());
+
+// Serve React frontend in production
+const clientDist = path.join(__dirname, '../../client/dist');
+app.use(express.static(clientDist));
 
 // Auto-seed if database is empty
 try {
@@ -386,10 +391,15 @@ app.get('/api/geocode', async (req, res) => {
   }
 });
 
+// Catch-all: serve React app for any non-API route (client-side routing)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../../client/dist/index.html'));
+});
+
 // Start server if run directly
 if (require.main === module) {
-  app.listen(PORT, () => {
-    console.log(`Local Events Map API server running on http://localhost:${PORT}`);
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Local Events Map API server running on http://0.0.0.0:${PORT}`);
   });
 }
 
